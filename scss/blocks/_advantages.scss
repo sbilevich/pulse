@@ -1,0 +1,43 @@
+.advantages {
+    height: 470px;
+    background-color: #f6f6f6;
+    padding: 70px 0 95px 0;
+
+    &__icons {
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        width: 240px;
+        text-align: center;
+    }
+    &__descr-header {
+        margin-top: 38px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #0d0d0d;
+    }
+    &__descr {
+        margin-top: 29px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #0d0d0d;
+        span {
+            color: #ff0000;
+        }
+    }
+    &__img {
+        &_animated {
+            animation-name: heartbeat;
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-play-state: paused;
+            &:hover {
+                animation-play-state: running;
+
+            }
+        }
+    }
+}
